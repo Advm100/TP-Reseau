@@ -1,4 +1,4 @@
-# Rendu TP1
+# Rendu TP2
 # I. Simplest LAN
 ### 1. Quelques pings
 
