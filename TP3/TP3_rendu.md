@@ -153,4 +153,53 @@ Interface : 192.168.56.1 --- 0x12
   239.255.255.250       01-00-5e-7f-ff-fa     statique
 ```
 ### 3. Bonus : ARP poisoning
+Pour cette partie j'ai travaillé avec mon pc fixe(attaquant) et mon pc portable(victime).
+```
+ Passerelle par défaut: 192.168.1.254
+```
+```
+Adresse physique: 80-19-34-04-BA-B9
+ Adresse IPv4: 192.168.1.88(préféré)
+```
+```
+Adresse physique  : 3F-A9-4C-77-21-B8
+Adresse IPv4: 192.168.0.101 (préféré)
+```
+PS C:\Users\Adam> arp -a
+
+Interface : 192.168.1.88 --- 0x8
+  Adresse Internet      Adresse physique      Type
+  192.168.1.63          64-1c-b0-e0-99-50     dynamique
+  192.168.1.187         f4-ca-e5-6a-27-3f     dynamique
+  192.168.1.254         00-24-d4-a3-c8-70     dynamique
+  192.168.1.255         ff-ff-ff-ff-ff-ff     statique
+  224.0.0.22            01-00-5e-00-00-16     statique
+  224.0.0.251           01-00-5e-00-00-fb     statique
+  224.0.0.252           01-00-5e-00-00-fc     statique
+  239.255.102.18        01-00-5e-7f-66-12     statique
+  239.255.255.250       01-00-5e-7f-ff-fa     statique
+  255.255.255.255       ff-ff-ff-ff-ff-ff     statique
+
+Interface : 10.5.1.1 --- 0x10
+  Adresse Internet      Adresse physique      Type
+  10.5.1.255            ff-ff-ff-ff-ff-ff     statique
+  224.0.0.22            01-00-5e-00-00-16     statique
+  224.0.0.251           01-00-5e-00-00-fb     statique
+  224.0.0.252           01-00-5e-00-00-fc     statique
+  239.255.255.250       01-00-5e-7f-ff-fa     statique
+
+Interface : 192.168.56.1 --- 0x13
+  Adresse Internet      Adresse physique      Type
+  192.168.56.106        08-00-27-84-d5-dc     dynamique
+  192.168.56.255        ff-ff-ff-ff-ff-ff     statique
+  224.0.0.22            01-00-5e-00-00-16     statique
+  224.0.0.251           01-00-5e-00-00-fb     statique
+  224.0.0.252           01-00-5e-00-00-fc     statique
+  239.255.255.250       01-00-5e-7f-ff-fa     statique
+```
+```
+PS C:\Windows\System32> pip install six
+PS C:\Windows\System32> pip install scapy
+PS C:\Users\Adam\Documents\arp-spoofing> python .\spoofer.py
+```
 ```
