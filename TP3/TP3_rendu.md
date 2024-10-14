@@ -165,6 +165,7 @@ Adresse physique: 80-19-34-04-BA-B9
 Adresse physique  : 3F-A9-4C-77-21-B8
 Adresse IPv4: 192.168.0.101 (préféré)
 ```
+```
 PS C:\Users\Adam> arp -a
 
 Interface : 192.168.1.88 --- 0x8
@@ -202,4 +203,36 @@ PS C:\Windows\System32> pip install six
 PS C:\Windows\System32> pip install scapy
 PS C:\Users\Adam\Documents\arp-spoofing> python .\spoofer.py
 ```
+```
+Interface : 192.168.1.88 --- 0x8
+  Adresse Internet      Adresse physique      Type
+  192.168.1.1           9c-b6-d0-05-18-db     dynamique
+  192.168.1.16          30-24-78-90-e6-f7     dynamique
+  192.168.1.58          9c-b6-d0-05-18-db     dynamique
+  192.168.1.67          2c-93-fb-57-60-10     dynamique
+  192.168.1.255         ff-ff-ff-ff-ff-ff     statique
+  224.0.0.2             01-00-5e-00-00-02     statique
+  224.0.0.22            01-00-5e-00-00-16     statique
+  224.0.0.251           01-00-5e-00-00-fb     statique
+  224.0.0.252           01-00-5e-00-00-fc     statique
+  239.255.255.250       01-00-5e-7f-ff-fa     statique
+  255.255.255.255       ff-ff-ff-ff-ff-ff     statique
+
+Interface : 10.5.1.1 --- 0x10
+  Adresse Internet      Adresse physique      Type
+  10.5.1.255            ff-ff-ff-ff-ff-ff     statique
+  224.0.0.22            01-00-5e-00-00-16     statique
+  224.0.0.251           01-00-5e-00-00-fb     statique
+  224.0.0.252           01-00-5e-00-00-fc     statique
+  239.255.255.250       01-00-5e-7f-ff-fa     statique
+
+Interface : 192.168.56.1 --- 0x13
+  Adresse Internet      Adresse physique      Type
+  192.168.56.106        08-00-27-84-d5-dc     dynamique
+  192.168.56.255        ff-ff-ff-ff-ff-ff     statique
+  224.0.0.22            01-00-5e-00-00-16     statique
+  224.0.0.251           01-00-5e-00-00-fb     statique
+  224.0.0.252           01-00-5e-00-00-fc     statique
+  239.255.255.250       01-00-5e-7f-ff-fa     statique
+
 ```
