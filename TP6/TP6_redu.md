@@ -112,7 +112,7 @@ LISTEN 0      10             [::1]:53           [::]:*    users:(("named",pid=15
 ;; ANSWER SECTION:
 web.tp6.b1.             86400   IN      A       10.6.2.11
 ```
-J'ai reussi a capturer des paquets DNS avec tcpdump mais pas à transferer le fichier toto çsur mon pc depuis ma vm
+J'ai reussi a capturer des paquets DNS avec tcpdump mais pas à transferer le fichier toto sur mon pc depuis ma vm
 pour l'ouvir sur Wireshark donc pour l'instant j'ai que ça:
 ```
 adam@adam-ubuntu:~$ sudo tcpdump -w toto.pcap -i enp0s3
